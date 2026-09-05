@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff1f2" />
+      <stop offset="50%" stop-color="#ffe4e6" />
+      <stop offset="100%" stop-color="#fecdd3" />
+    </linearGradient>
+    <linearGradient id="coneGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="scoop1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb7185" />
+      <stop offset="100%" stop-color="#e11d48" />
+    </linearGradient>
+    <linearGradient id="scoop2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <linearGradient id="scoop3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a7f3d0" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.15" flood-color="#881337" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded card -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)" />
+
+  <!-- Soft Ambient Glow -->
+  <circle cx="256" cy="240" r="180" fill="#f43f5e" opacity="0.12" filter="blur(30px)" />
+
+  <!-- Main Illustration Group -->
+  <g filter="url(#softShadow)" transform="translate(0, -10)">
+    <!-- Waffle Cone -->
+    <path d="M190 270 L256 420 L322 270 Z" fill="url(#coneGrad)" />
+    <!-- Cone Waffle Pattern Lines -->
+    <path d="M205 295 L307 295 M220 330 L292 330 M235 365 L277 365 M210 275 L280 395 M302 275 L232 395" stroke="#b45309" stroke-width="3.5" opacity="0.6" stroke-linecap="round" />
+
+    <!-- Bottom Scoop (Pistachio/Mint) -->
+    <circle cx="210" cy="245" r="52" fill="url(#scoop3)" />
+    <!-- Bottom Scoop (Vanilla/Caramel) -->
+    <circle cx="302" cy="245" r="52" fill="url(#scoop2)" />
+    
+    <!-- Top Big Scoop (Strawberry/Berry) -->
+    <circle cx="256" cy="190" r="68" fill="url(#scoop1)" />
+
+    <!-- Cream Drip / Gloss -->
+    <ellipse cx="235" cy="165" rx="16" ry="10" transform="rotate(-30 235 165)" fill="#ffffff" opacity="0.4" />
+    <ellipse cx="190" cy="230" rx="10" ry="6" transform="rotate(-30 190 230)" fill="#ffffff" opacity="0.4" />
+    
+    <!-- Cherry on top -->
+    <circle cx="256" cy="115" r="18" fill="#be123c" />
+    <ellipse cx="252" cy="110" rx="5" ry="3" fill="#ffffff" opacity="0.6" />
+    <path d="M256 100 Q270 70 295 75" fill="none" stroke="#78350f" stroke-width="4" stroke-linecap="round" />
+    <path d="M285 73 Q295 65 305 70" fill="none" stroke="#15803d" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Sprinkles -->
+    <rect x="235" y="195" width="12" height="4" rx="2" fill="#38bdf8" transform="rotate(25 235 195)" />
+    <rect x="270" y="185" width="12" height="4" rx="2" fill="#fbbf24" transform="rotate(-40 270 185)" />
+    <rect x="250" y="215" width="10" height="4" rx="2" fill="#ec4899" transform="rotate(15 250 215)" />
+  </g>
+
+  <!-- Sparkles -->
+  <path d="M120 140 Q130 140 130 130 Q130 140 140 140 Q130 140 130 150 Q130 140 120 140 Z" fill="#f59e0b" opacity="0.8" />
+  <path d="M380 160 Q390 160 390 150 Q390 160 400 160 Q390 160 390 170 Q390 160 380 160 Z" fill="#e11d48" opacity="0.8" />
+  <path d="M360 340 Q370 340 370 330 Q370 340 380 340 Q370 340 370 350 Q370 340 360 340 Z" fill="#10b981" opacity="0.8" />
+</svg>

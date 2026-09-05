@@ -1,0 +1,7 @@
+{
+  "name": "Helados Caram Delivery",
+  "description": "Aplicación web y PWA de delivery para Helados Caram en Puerto Padre, Las Tunas: helados artesanales, tinas, cakes personalizados y dulcería fina.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
